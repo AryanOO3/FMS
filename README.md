@@ -31,19 +31,19 @@ A menu-driven Facilities Maintenance Scheduler built for the first phase of the 
 Use Python 3.10 or later.
 
 ```powershell
-py -m main
+py -m backend.main
 ```
 
 On another Python installation, run:
 
 ```powershell
-python main.py
+python -m backend.main
 ```
 
 ## Run Tests
 
 ```powershell
-python -m unittest discover -s tests -v
+python -m unittest discover -s backend/tests -v
 ```
 
 The test suite uses fixed dates so it does not depend on the system date.
@@ -51,12 +51,18 @@ The test suite uses fixed dates so it does not depend on the system date.
 ## Project Structure
 
 ```text
-main.py
-phase1/
-  procedural_scheduler.py
-tests/
-  test_procedural_scheduler.py
+backend/
+  main.py
+  phase1/
+    procedural_scheduler.py
+  phase2/
+  phase3/
+  tests/
+    test_phase1.py
+frontend/
+  phase4/
 TODO.md
+README.md
 ```
 
 ## Sample Data

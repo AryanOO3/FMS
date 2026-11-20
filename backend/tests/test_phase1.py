@@ -4,7 +4,7 @@ from datetime import date, timedelta
 from contextlib import redirect_stdout
 from unittest.mock import patch
 
-from phase1.procedural_scheduler import (
+from backend.phase1.procedural_scheduler import (
     assign_staff,
     complete_task,
     find_staff,
